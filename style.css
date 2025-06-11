@@ -100,3 +100,26 @@ pre code {
   background-color: #fff0f4;
   border-radius: 8px;
 }
+.section-title:hover {
+  background-color: #fef4f8;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.carousel-inner img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+.responsive-box {
+  background-color: #fddde6;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .responsive-box {
+    background-color: #cde9ff;
+  }
+}
