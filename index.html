@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fandom Lee Hi - Only</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="header-bg text-center">
+    <h1>Lee Hi - Only</h1>
+    <p>Explorando el diseño web responsivo con el estilo visual de Lee Hi</p>
+  </header>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#responsive">Responsivo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#viewport">Viewport</a></li>
+          <li class="nav-item"><a class="nav-link" href="#media">Media Queries</a></li>
+          <li class="nav-item"><a class="nav-link" href="#bootstrap">Bootstrap 5</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="container my-4">
+    <div class="row">
+      <!-- Aside -->
+      <aside class="col-md-4">
+        <div class="card p-4">
+          <h4>¿Qué encontrarás aquí?</h4>
+          <p>Una guía visual e interactiva del diseño web responsivo, con el estilo delicado de Lee Hi.</p>
+          <button class="btn btn-custom" data-bs-toggle="collapse" data-bs-target="#infoIntro">Ver más</button>
+          <div class="collapse collapse-content" id="infoIntro">
+            <p>Este sitio presenta los pilares del diseño moderno web con ejemplos visuales para aprender sobre Viewport, Media Queries, Bootstrap 5 y cómo hacer tu sitio adaptativo con estilo.</p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Secciones -->
+      <section class="col-md-8">
+        <article id="responsive" class="section-title">
+          <h2>Diseño Web Responsivo</h2>
+          <p>Permite que un sitio se adapte automáticamente a diferentes tamaños de pantalla. Es clave para ofrecer una experiencia fluida y accesible en cualquier dispositivo.</p>
+          <button class="btn btn-toggle" data-bs-toggle="collapse" data-bs-target="#infoResponsive">Ver más</button>
+          <div class="collapse collapse-content" id="infoResponsive">
+            <p>El diseño web responsivo se basa en tres principios fundamentales:</p>
+            <ul>
+              <li><strong>Rejillas fluidas:</strong> Usar porcentajes en lugar de píxeles para que el ancho del contenido se adapte.</li>
+              <li><strong>Imágenes flexibles:</strong> Las imágenes se redimensionan automáticamente según el dispositivo.</li>
+              <li><strong>Media Queries:</strong> Permiten aplicar estilos dependiendo del ancho de pantalla.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article id="viewport" class="section-title">
+          <h2>Viewport</h2>
+          <p>Es el área visible de la página en el navegador. Se controla con esta metaetiqueta:</p>
+          <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+          <button class="btn btn-toggle" data-bs-toggle="collapse" data-bs-target="#infoViewport">Ver más</button>
+          <div class="collapse collapse-content" id="infoViewport">
+            <p>Sin definir el viewport, los navegadores móviles muestran el sitio como una miniatura del diseño de escritorio, forzando al usuario a hacer zoom. Esta etiqueta garantiza que el diseño se ajuste correctamente.</p>
+          </div>
+        </article>
+
+        <article id="media" class="section-title">
+          <h2>Media Queries</h2>
+          <p>Permiten aplicar estilos según las características del dispositivo, como su ancho:</p>
+          <pre><code>@media (max-width: 768px) {
+  body {
+    background-color: #f4f4f4;
+  }
+}</code></pre>
+          <button class="btn btn-toggle" data-bs-toggle="collapse" data-bs-target="#infoMedia">Ver más</button>
+          <div class="collapse collapse-content" id="infoMedia">
+            <p>Las media queries permiten modificar la apariencia del sitio según el tamaño de la pantalla. Con ellas puedes:</p>
+            <ul>
+              <li>Ocultar secciones en móvil.</li>
+              <li>Reordenar bloques.</li>
+              <li>Aplicar estilos distintos según el dispositivo.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article id="bootstrap" class="section-title">
+          <h2>Bootstrap 5</h2>
+          <ul>
+            <li><strong>Container:</strong> centra y da margen al contenido.</li>
+            <li><strong>Grid System:</strong> divide el diseño en columnas responsivas.</li>
+            <li><strong>Flex:</strong> organiza elementos fácilmente.</li>
+            <li><strong>Carousel:</strong> muestra imágenes de forma dinámica.</li>
+            <li><strong>Navbar:</strong> barra de navegación adaptable.</li>
+          </ul>
+          <button class="btn btn-toggle" data-bs-toggle="collapse" data-bs-target="#infoBootstrap">Ver más</button>
+          <div class="collapse collapse-content" id="infoBootstrap">
+            <p>Bootstrap 5 facilita la creación de sitios responsivos con componentes listos para usar. Su sistema de 12 columnas, utilidades de flexbox y elementos interactivos lo hacen ideal para cualquier tipo de sitio web moderno.</p>
+          </div>
+        </article>
+      </section>
+    </div>
+
+    <!-- Galería -->
+    <section class="mt-5">
+      <h3 class="text-center">Galería de Lee Hi</h3>
+      <div class="row text-center mt-3">
+        <div class="col-6 col-md-3 mb-3"><img src="img/img1.jpg" class="img-fluid" alt="Lee Hi 1"></div>
+        <div class="col-6 col-md-3 mb-3"><img src="img/img2.jpg" class="img-fluid" alt="Lee Hi 2"></div>
+        <div class="col-6 col-md-3 mb-3"><img src="img/img3.jpg" class="img-fluid" alt="Lee Hi 3"></div>
+        <div class="col-6 col-md-3 mb-3"><img src="img/img4.jpg" class="img-fluid" alt="Lee Hi 4"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="row">
+      <div class="col-md-6">Contenido Footer 1: Curso UTN</div>
+      <div class="col-md-6">Contenido Footer 2: Fandom Lee Hi - 2025</div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
